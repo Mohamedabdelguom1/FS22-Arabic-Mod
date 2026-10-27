@@ -1,48 +1,88 @@
 <p align="center"><img src="banner.png" alt="مود التعريب لعبة فارمينغ سيموليتر 22"></p>
 
-# تعريب Farming Simulator 22
+<p align="center">
+  <img src="https://img.shields.io/badge/Farming_Simulator-22-2ea44f?style=for-the-badge" alt="FS22">
+  <img src="https://img.shields.io/badge/Translated-97%25-1f6feb?style=for-the-badge" alt="97%">
+  <img src="https://img.shields.io/badge/Version-0.3.0-f0a000?style=for-the-badge" alt="0.3.0">
+</p>
 
-مود يعرّب اللعبة (الإصدار 1.14): يصل الحروف العربية ويرتّبها من اليمين إلى اليسار، ويترجم 4059 نصاً من 4206 (97٪). ومعه أداة تضيف الحروف العربية إلى خط اللعبة على جهازك.
+<h1 align="center">🌾 اللعبة الآن بالعربي 🚜</h1>
 
-**المطوّر:** mohamedabdelguom — Mohamedabdelguom@gmail.com
+<p align="center">
+  حروف موصولة ✅ &nbsp; من اليمين لليسار ✅ &nbsp; أكثر من 4000 نص مترجم ✅
+</p>
 
-**تحميل المود جاهزاً:** [FS22_ArabicLanguage.zip](https://github.com/Mohamedabdelguom1/FS22-Arabic-Mod/releases/latest/download/FS22_ArabicLanguage.zip)
+<p align="center">
+  <a href="https://github.com/Mohamedabdelguom1/FS22-Arabic-Mod/releases/latest/download/FS22-Arabic-Installer.zip">
+    <img src="https://img.shields.io/badge/⬇_Download-Installer-2ea44f?style=for-the-badge&labelColor=1a7f37" height="50" alt="تحميل">
+  </a>
+</p>
 
-## طريقة التشغيل
+---
 
-> **تنبيه مهم:** المود وحده لا يكفي. يجب تثبيت الخط العربي معه (الخطوة 1)، وإلا ظهرت النصوص العربية فراغاً، وظهرت رسالة «Character not found» في سجل اللعبة.
+## 🎮 التثبيت في 3 خطوات
 
-1. **ثبّت الخط العربي** بالأداة الموجودة في المستودع. تأخذ الأداة الحروف من خط ويندوز (Segoe UI) على جهازك وتضيفها إلى خط اللعبة، وتحفظ الخط الأصلي تلقائياً قبل أي تعديل.
-   - ثبّت [بايثون](https://www.python.org/downloads/)، ثم المكتبتين:
-     ```bash
-     pip install numpy pillow
-     ```
-   - حمّل المستودع (زر Code ثم Download ZIP) وفكّ ضغطه، ثم شغّل من داخله:
-     ```bash
-     python FS22-Arabic-v0.3.0/tools/add_arabic_glyphs.py --game "D:\Games\Farming Simulator 22"
-     ```
-     ضع مكان المسار مجلد اللعبة عندك.
-2. **ثبّت المود:** ضع `FS22_ArabicLanguage.zip` كما هو، دون فك الضغط، في:
-   `Documents\My Games\FarmingSimulator2022\mods\`
-3. **شغّل اللعبة:** افتح حفظاً جديداً أو قديماً، وفعّل «Arabic Language» في قائمة المودات قبل البدء.
-4. **تأكّد:** يظهر أعلى الشاشة لعشرين ثانية سطر «مود التعريب يعمل» مع عدد النصوص المترجمة.
+<p align="center"><img src="art/step1.png" width="700" alt="1. حمّل ملف التثبيت"></p>
+<p align="center"><img src="art/step2.png" width="700" alt="2. شغّل Install.bat"></p>
+<p align="center"><img src="art/step3.png" width="700" alt="3. افتح اللعبة وفعّل المود"></p>
 
-القائمة الرئيسية تبقى إنجليزية، لأن المودات لا تُحمَّل إلا عند فتح الحفظ.
-بعد كل تحديث للعبة قد يعود الخط الأصلي، فأعد تشغيل الأداة.
+> [!IMPORTANT]
+> **تحتاج «بايثون» مرة واحدة فقط.** إن لم يكن عندك، يفتح لك المثبّت صفحة تحميله.
+> عند تثبيته ضع علامة ✔️ على **Add python.exe to PATH**.
 
-**الإلغاء:** احذف المود من مجلد المودات، وأعد الخط الأصلي:
-```bash
-python FS22-Arabic-v0.3.0/tools/add_arabic_glyphs.py --game "D:\Games\Farming Simulator 22" --restore
-```
+> [!TIP]
+> بعد فتح الحفظ يظهر أعلى الشاشة: **«مود التعريب يعمل»** 🎉
 
-## محتويات المستودع
+> [!WARNING]
+> **المود وحده لا يكفي!** المثبّت يضيف الحروف العربية إلى خط اللعبة. بدونه لا تظهر الكتابة العربية.
 
-- التثبيت وتعديل الترجمة: [FS22-Arabic-v0.3.0/تثبيت.md](FS22-Arabic-v0.3.0/تثبيت.md)
-- المود الجاهز: `FS22-Arabic-v0.3.0/FS22_ArabicLanguage.zip`
-- مصدر المود: `FS22-Arabic-v0.3.0/source/`
-- ملفات الترجمة: `FS22-Arabic-v0.3.0/translation/`
-- الأدوات (الخط، المعاينة، الاختبار، بناء الترجمة، الصورة): `FS22-Arabic-v0.3.0/tools/`
-- الوثائق: `FS22-Arabic-v0.3.0/docs/`
+---
 
-لا يحوي المستودع ملفات من اللعبة ولا من خطوط مايكروسوفت: الخط يُبنى على جهاز كل مستخدم من نسخته.
-Farming Simulator علامة تجارية لشركة GIANTS Software، وهذا المود غير رسمي.
+## ❓ أسئلة سريعة
+
+<details>
+<summary>🏠 <b>القائمة الرئيسية ما زالت إنجليزية؟</b></summary>
+<br>
+طبيعي. التعريب يبدأ بعد فتح الحفظ، لأن اللعبة تحمّل المودات عندها.
+</details>
+
+<details>
+<summary>📂 <b>المثبّت فتح مجلدين وطلب سحب الملف؟</b></summary>
+<br>
+ويندوز منع البرنامج من النسخ. اسحب <code>FS22_ArabicLanguage.zip</code> إلى مجلد <code>mods</code> المفتوح، وانتهى.
+</details>
+
+<details>
+<summary>🔄 <b>حدّثت اللعبة فاختفى التعريب؟</b></summary>
+<br>
+التحديث قد يعيد الخط الأصلي. شغّل <code>Install.bat</code> مرة أخرى.
+</details>
+
+<details>
+<summary>🗑️ <b>كيف ألغي التعريب؟</b></summary>
+<br>
+شغّل <code>Uninstall.bat</code>. يعيد الخط الأصلي ويحذف المود.
+</details>
+
+<details>
+<summary>🛠️ <b>للمطوّرين: ملفات المشروع وتعديل الترجمة</b></summary>
+<br>
+
+| المجلد | ما فيه |
+|---|---|
+| `FS22-Arabic-v0.3.0/source/` | مصدر المود |
+| `FS22-Arabic-v0.3.0/translation/` | ملفات الترجمة (مفتاح=ترجمة) |
+| `FS22-Arabic-v0.3.0/tools/` | أدوات الخط والمعاينة والاختبار والصور |
+| `FS22-Arabic-v0.3.0/installer/` | المثبّت |
+| `FS22-Arabic-v0.3.0/docs/` | دراسة اللعبة ودليل المود |
+
+التفاصيل في [تثبيت.md](FS22-Arabic-v0.3.0/تثبيت.md).
+</details>
+
+---
+
+<p align="center">
+  👨‍💻 <b>تطوير:</b> mohamedabdelguom &nbsp;·&nbsp; 📧 <a href="mailto:Mohamedabdelguom@gmail.com">Mohamedabdelguom@gmail.com</a>
+</p>
+
+<sub>المستودع لا يحوي ملفات من اللعبة ولا من خطوط مايكروسوفت: الخط يُبنى على جهاز كل لاعب من نسخته. Farming Simulator علامة تجارية لشركة GIANTS Software، وهذا المود غير رسمي.</sub>

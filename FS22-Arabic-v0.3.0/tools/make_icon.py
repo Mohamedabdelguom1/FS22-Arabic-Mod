@@ -3,6 +3,7 @@ Draw the mod's icon (256x256) and save it as the uncompressed BGRA .dds the
 mod uses, plus a .png copy for the repository.
 
   python make_icon.py <icon_arabicLanguage.dds> <icon.png>
+  python make_icon.py <icon_arabicLanguage.dds> <icon.png> <picture> x0 y0 x1 y1
 
 Arabic is shaped with preview.visual(), since Pillow here has no shaping.
 """
@@ -111,7 +112,18 @@ def save_dds(img, path):
     open(path, 'wb').write(header + Image.merge('RGBA', (b, g, r, a)).tobytes())
 
 
+def from_image(path, box):
+    """Square crop (x0 y0 x1 y1) of a picture, with the icon's rounded corners."""
+    img = Image.open(path).convert('RGBA').crop(box).resize((W, W), Image.LANCZOS)
+    img.putalpha(rounded_mask(int(W * 0.12)))
+    return img.resize((SIZE, SIZE), Image.LANCZOS)
+
+
 if __name__ == '__main__':
-    icon = draw()
+    # python make_icon.py out.dds out.png [picture x0 y0 x1 y1]
+    if len(sys.argv) > 3:
+        icon = from_image(sys.argv[3], tuple(int(v) for v in sys.argv[4:8]))
+    else:
+        icon = draw()
     save_dds(icon, sys.argv[1])
     icon.save(sys.argv[2])

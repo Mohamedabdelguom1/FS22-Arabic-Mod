@@ -1,4 +1,4 @@
-<p align="center"><img src="icon.png" width="160" alt="تعريب FS22"></p>
+<p align="center"><img src="banner.png" alt="مود التعريب لعبة فارمينغ سيموليتر 22"></p>
 
 # تعريب Farming Simulator 22
 

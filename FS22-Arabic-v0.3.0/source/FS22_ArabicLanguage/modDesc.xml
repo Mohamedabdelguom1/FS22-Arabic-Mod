@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="80">
+    <author>mohamedabdelguom (Mohamedabdelguom@gmail.com)</author>
+    <version>0.3.0.0</version>
+    <title>
+        <en>Arabic Language</en>
+        <de>Arabische Sprache</de>
+    </title>
+    <description>
+        <en><![CDATA[Shows the game in Arabic, with joined letters written right to left.
+
+Needs the Arabic glyphs added to shared/font/defaultFont with add_arabic_glyphs.py.
+Active once a savegame is loaded; the main menu stays in the game language.]]></en>
+    </description>
+    <iconFilename>icon_arabicLanguage.dds</iconFilename>
+    <multiplayer supported="true" />
+    <extraSourceFiles>
+        <sourceFile filename="scripts/ArabicShaper.lua"/>
+        <sourceFile filename="scripts/ArabicLanguage.lua"/>
+    </extraSourceFiles>
+</modDesc>
